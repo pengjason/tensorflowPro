@@ -26,7 +26,7 @@ fixW = tf.assign(W,[2.])
 fixb = tf.assign(b,[1.])
 sess.run([fixW,fixb])
 
-print(sess.run(loss, {x: [1, 2, 3, 6, 8], y: [4.8, 8.5, 10.4, 21.0, 25.3]}))
+# print(sess.run(loss, {x: [1, 2, 3, 6, 8], y: [4.8, 8.5, 10.4, 21.0, 25.3]}))
 
 
 optimizer = tf.train.GradientDescentOptimizer(0.001)
