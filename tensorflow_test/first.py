@@ -37,7 +37,10 @@ def feed_placeholder():
     with tf.Session( ) as sess:
         print('get feed placeholder')
         print(sess.run(new_value,feed_dict={input1:23.0,input2:11.0}))
-        
+
+# print(tf.__version__)
+# print(tf.__path__)
+   
 init_for_loop()
 feed_placeholder()
 print('test tensorflow')
