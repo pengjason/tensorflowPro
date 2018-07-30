@@ -26,7 +26,6 @@ y_train = [4.8, 8.5, 10.4, 21.0, 25.3]
 sess = tf.Session()
 init = tf.global_variables_initializer()
 sess.run(init)
-
 # 调用 merge_all() 收集所有的操作数据
 merged = tf.summary.merge_all()
 # 模型运行产生的所有数据保存到  文件夹供 TensorBoard 使用
